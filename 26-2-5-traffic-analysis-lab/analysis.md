@@ -31,10 +31,10 @@ Answer:
 ---
 
 ## Initial Observations
-- Capture duration:
-- Total packets:
-- Notable protocols observed:
-- Immediate red flags:
+- Capture duration: 10 minutes, 23 seconds
+- Total packets: 51181
+- Notable protocols observed: TCP,HTTP, and TLS. THe host 10.1.21.58 has multiple TCP connections to 153.92.1.49, indicating possible malware infection.
+- Immediate red flags: There is only 1 IP that the triggered IP communicated with. 
 
 ---
 
