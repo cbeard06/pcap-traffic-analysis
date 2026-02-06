@@ -25,7 +25,7 @@ Answer:
 
 ## Environment
 - Host OS: Windows 11 Home
-- Wireshark Version:
+- Wireshark Version: 4.6.3
 - Analysis Type: Passive PCAP Analysis
 
 ---
@@ -79,7 +79,7 @@ Answer: gwyatt
 5. What is the full name of the user from the user account?
 
 For this question, since we already had the username as "gwyatt", I decided to use the find feature to look for the full name. I filtered the find to (Packet details, string, "Wyatt", case sensitive) to look through all the packets and to find one that had "Wyatt" to see if I could get the full name. Lo and behold, I found my name in packet 39556.
-![Screenshot 6](<screenshots/image-3.png>)
+![Screenshot 6](<screenshots/image-4.png>)
 
 Answer: Gabriel Wyatt
 
@@ -88,8 +88,8 @@ Answer: Gabriel Wyatt
 For this step, I was thinking about how I would go about this for a long time. Eventually, I just decided to filter by the source IP and for either http requests, TLS client hello, and DNS. There was 352 packets displayed, with majority of them being DNS packets. I quickly had to go into a DNS packet and add the name of the host as a column so it would be very easy to go through all of these domain names. The first one that caught my eye was "whitepepper.su". 
 ![Screenshot 7](<screenshots/image-5.png>)
 As you can see in this screenshot, the first "whitepepper.su" query comes at 23:05:36.218945. To further confirm if this is the correct domain, I filtered by the IP of the attacker to see if the first connection comes right after the query to "whitepepper.su".
-![Screenshot 8](<screenshots/image-4.png>)
-As you can see, the first connection to the attackers IP comes right after the query to the whitepepper domain, which solidifies my suspicions.
+![Screenshot 8](<screenshots/image-6.png>)
+As you can see, the first connection to the attackers IP comes at 23:05:36.253553 right after the query to the whitepepper domain, which solidifies my suspicions.
 
 Answer: whitepepper.su
 
