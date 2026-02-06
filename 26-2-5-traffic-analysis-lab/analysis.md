@@ -39,7 +39,21 @@ Answer:
 ---
 
 ## Traffic Analysis
+1. What is the IP address of the infected Windows client?
 
+For this question, my first thought was to filter by the given IP and see what IP addresses made connections to it. 
+![Screenshot 1](<screenshots/Screenshot 2026-02-05 222224.png>)
+From the screenshot, you can see that the only IP address contacting the given IP is 10.1.21.58
+
+Answer: 10.1.21.58
+
+2. What is the MAC address of the infected Windows client?
+
+For this question, my first thought is just inspecting one of the packets shown and looking at the Ethernet details to find the MAC address.
+![Screenshot 2](<screenshots/image.png>)
+From here, you can see that the source MAC address is 00:21:5d:c8:0e:f2
+
+Answer: 00:21:5d:c8:0e:f2
 ### Protocol Breakdown
 - **DNS:**  
 - **HTTP / HTTPS:**  
