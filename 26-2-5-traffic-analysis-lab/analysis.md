@@ -94,5 +94,12 @@ As you can see, the first connection to the attackers IP comes right after the q
 Answer: whitepepper.su
 
 
+
+## Conclusion
+
+Thank you for reading my traffic analysis of this lab, this is my first one and my further labs will only be more detailed and thorough. 
+
+-Connor Beard
+
 ---
 
